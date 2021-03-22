@@ -1,0 +1,41 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorBackgroundGrey</item>
+        <item name="colorPrimaryVariant">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorBackgroundDarkGrey</item>
+        <item name="colorAccent">@color/colorWhite</item>
+
+
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
+    
+
+    <style name="AppTheme.Home" parent="AppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="materialButtonStyle">@style/Widget.AppButton</item>
+        <item name="android:windowBackground">@mipmap/home_background</item>
+
+    </style>
+
+    <style name="AppTheme.Screen" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/colorBackgroundDarkGrey</item>
+
+    </style>
+
+
+    <style name="Widget.AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorPink</item>
+        <item name="fontFamily">@font/karla_bold</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:padding">@dimen/padding_10dp</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+    </style>
+
+</resources>

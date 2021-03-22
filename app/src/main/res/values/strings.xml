@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LAB49</string>
+    <string name="let_s_go">Let\'s go!</string>
+    <string name="error_internet">"No Internet Access "</string>
+    <string name="tap_to_snap">Tap to snap</string>
+    <string name="image">image</string>
+    <string name="tap_to_try_again">Tap to try again</string>
+    <string name="tiles_name">Book</string>
+    <string name="time">23:59:45</string>
+    <string name="error_camera">Error occurred while saving picture</string>
+    <string name="cancelled">You have cancelled the action</string>
+    <string name="ok">OK</string>
+    <string name="restart">Restart</string>
+    <string name="play_again">Play again</string>
+
+    <string name="dialog_game_win">You have won the game</string>
+    <string name="dialog_game_loss">You have loss the game</string>
+    <string name="dialog_title">Game Over</string>
+</resources>

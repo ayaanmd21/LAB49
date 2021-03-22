@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/padding_10dp"
+        android:layout_marginLeft="@dimen/padding_10dp"
+        android:layout_marginEnd="@dimen/padding_10dp"
+        android:layout_marginRight="@dimen/padding_10dp"
+        android:background="@color/colorBackgroundGrey">
+
+        <TextView
+            android:id="@+id/tv_titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_76dp"
+            android:fontFamily="@font/karla_bold"
+            android:gravity="center"
+            android:text="@string/tap_to_snap"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_medium" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/first_tiles_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_titles"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/include_tiles1"
+                layout="@layout/item_tiles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_7dp"
+                android:layout_marginRight="@dimen/margin_7dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/include_tiles2"
+                layout="@layout/item_tiles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_7dp"
+                android:layout_marginLeft="@dimen/margin_7dp"
+                android:layout_weight="1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_tiles_group"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/include_tiles3"
+                layout="@layout/item_tiles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_7dp"
+                android:layout_marginRight="@dimen/margin_7dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/include_tiles4"
+                layout="@layout/item_tiles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_7dp"
+                android:layout_marginLeft="@dimen/margin_7dp"
+                android:layout_weight="1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_83dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBackgroundDarkGrey">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/karla"
+            android:text="@string/time"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_large"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

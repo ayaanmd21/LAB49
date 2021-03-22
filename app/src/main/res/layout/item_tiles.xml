@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tiles_container"
+    android:background="@mipmap/ic_tile_default"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_tiles"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_size_139dp"
+            android:layout_margin="@dimen/margin4dp"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:id="@+id/tv_retry"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_size_139dp"
+            android:alpha="0.7"
+            android:layout_margin="@dimen/margi6dp"
+            android:visibility="gone"
+            android:background="@color/colorBackgroundDarkGrey">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/karla_bold"
+                android:text="@string/tap_to_try_again"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_extra_small"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="@dimen/margin_20dp"
+            android:layout_height="@dimen/margin_20dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/src_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_size_139dp"
+            android:alpha="0.7"
+            android:background="@color/colorBackgroundDarkGrey"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_tiles_height">
+
+        <TextView
+            android:id="@+id/tv_tiles_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/karla"
+            android:gravity="center"
+            android:text="@string/tiles_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_small" />
+    </FrameLayout>
+
+</LinearLayout>

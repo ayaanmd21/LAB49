@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--    Using android recommended unit for text size that will scale according to screen-->
+    <!--    F1-->
+    <dimen name="text_size_large">48sp</dimen>
+    <!--    F2-->
+    <dimen name="text_size_medium">28sp</dimen>
+    <!--    F3-->
+    <dimen name="text_size_small">24sp</dimen>
+    <!--    F4-->
+    <dimen name="text_size_extra_small">14sp</dimen>
+
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_175dp">175dp</dimen>
+    <dimen name="margin_83dp">83dp</dimen>
+    <dimen name="margin_76dp">76dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_7dp">7.5dp</dimen>
+    <dimen name="button_corner_radius">8dp</dimen>
+
+
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_30dp">30dp</dimen>
+
+    <dimen name="image_size_139dp">139dp</dimen>
+    <dimen name="text_tiles_height">36dp</dimen>
+    <dimen name="margin4dp">4dp</dimen>
+    <dimen name="margi6dp">6dp</dimen>
+
+
+</resources>
